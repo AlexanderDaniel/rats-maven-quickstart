@@ -31,6 +31,7 @@
         </executions>
         <configuration>
           <mainClass>xtc.parser.Rats</mainClass>
+          <includeProjectDependencies>false</includeProjectDependencies>
           <includePluginDependencies>true</includePluginDependencies>
           <arguments>
             <!-- other useful arguments: -verbose -->
