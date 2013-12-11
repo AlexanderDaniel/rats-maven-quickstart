@@ -30,26 +30,52 @@
           </execution>
         </executions>
         <configuration>
-          <mainClass>xtc.parser.Rats</mainClass>
-          <includeProjectDependencies>false</includeProjectDependencies>
-          <includePluginDependencies>true</includePluginDependencies>
-          <arguments>
-            <!-- other useful arguments: -verbose -->
-            <argument>-lgpl</argument>
-            <argument>-out</argument>
-            <argument>src/main/java/rats/spike</argument>
-            <argument>grammar/Simple.rats</argument>
-          </arguments>
+          <mainClass>rats.spike.SimpleMain</mainClass>
         </configuration>
-        <dependencies>
-          <dependency>
-            <groupId>xtc</groupId>
-            <artifactId>rats</artifactId>
-            <version>2.3.1</version>
-          </dependency>
-        </dependencies>
       </plugin>
     </plugins>
   </build>
+
+  <!-- http://www.mail-archive.com/user@mojo.codehaus.org/msg00151.html -->
+  <profiles>
+    <profile>
+      <id>regenerate</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>1.2.1</version>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>java</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <mainClass>xtc.parser.Rats</mainClass>
+              <includeProjectDependencies>false</includeProjectDependencies>
+              <includePluginDependencies>true</includePluginDependencies>
+              <arguments>
+                <!-- other useful arguments: -verbose -->
+                <argument>-lgpl</argument>
+                <argument>-out</argument>
+                <argument>src/main/java/rats/spike</argument>
+                <argument>grammar/Simple.rats</argument>
+              </arguments>
+            </configuration>
+            <dependencies>
+              <dependency>
+                <groupId>xtc</groupId>
+                <artifactId>rats</artifactId>
+                <version>2.3.1</version>
+              </dependency>
+            </dependencies>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 
 </project>
