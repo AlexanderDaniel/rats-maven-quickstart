@@ -6,4 +6,5 @@
 # Put both rats.jar and Simple.rats in the same directory.
 # Use Rats! on Simple.rats, which will generate a new file SimpleParser.java
 
-java -ea -cp rats-2.3.1.jar xtc.parser.Rats -lgpl Simple.rats
+# -verbose
+java -ea -cp rats-2.3.1.jar xtc.parser.Rats -lgpl -out ../src/main/java/rats/spike Simple.rats

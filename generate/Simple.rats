@@ -1,6 +1,6 @@
 /* module intro */
 module Simple;
-option parser(SimpleParser);
+option parser(rats.spike.SimpleParser);
 
 /* productions for syntax analysis */
 public String program = e:expr EOF {yyValue=e;};
