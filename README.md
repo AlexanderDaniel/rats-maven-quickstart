@@ -11,7 +11,7 @@ See the generated parser in action:
 
 Note: Only digits are supported (no numbers). The grammar is kept as simple as possible for demonstration purposes.
 
-# Re-generating the Java source from the grammar
+# Regenerating the Java source from the grammar
 
 `mvn exec:java -P regenerate` will use [grammar/Simple.rats](grammar/Simple.rats)
 and regenerate [src/main/java/rats/spike/SimpleParser.java](src/main/java/rats/spike/SimpleParser.java).
