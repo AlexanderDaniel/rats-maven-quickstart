@@ -1,7 +1,7 @@
 # Introduction
 
 Using the [Rats! parser generator](http://cs.nyu.edu/rgrimm/xtc/rats-intro.html)
-from [xtc](http://cs.nyu.edu/rgrimm/xtc/) project.
+from [xtc](http://cs.nyu.edu/rgrimm/xtc/) project with Maven.
 
 The example is based on the article [Introduction to the Rats! Parser Generator](http://cs.nyu.edu/courses/fall11/CSCI-GA.2130-001/rats-intro.pdf).
 
