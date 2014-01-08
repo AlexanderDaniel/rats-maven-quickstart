@@ -1,5 +1,5 @@
 /* module intro */
-module Simple;
+module rats.spike.Simple;
 option parser(rats.spike.SimpleParser);
 
 /* productions for syntax analysis */
